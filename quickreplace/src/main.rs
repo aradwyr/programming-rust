@@ -58,7 +58,7 @@ fn main() {
         Ok(v) => v,
         Err(e) => {
             eprintln!("{} failed to replace text: {:?}",
-                "Error:".red().bold(), args.filename, e);
+                "Error:".red().bold(), e);
             std::process::exit(1);
         }
     };
